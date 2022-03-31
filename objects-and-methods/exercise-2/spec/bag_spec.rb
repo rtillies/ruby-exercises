@@ -59,7 +59,7 @@ RSpec.describe Bag do
     expect(bag.contains?('Nerds')).to be false
   end
 
-  xit 'can get a particular type of candy' do
+  it 'can get a particular type of candy' do
     bag = Bag.new
     bag << Candy.new('Jawbreaker')
     bag << Candy.new('Jawbreaker')

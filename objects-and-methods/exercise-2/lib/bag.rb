@@ -18,6 +18,10 @@ class Bag
   end
 
   def contains? name
-    @candies.any? { |candy| candy.type == name  }
+    @candies.any? { |candy| candy.type == name }
+  end
+
+  def grab name
+    @candies.find { |candy| candy.type == name }
   end
 end
