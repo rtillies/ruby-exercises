@@ -32,6 +32,7 @@ class Bag
   def take quantity
     taken = []
     quantity.times { taken << @candies.pop }
+    return taken[0] if quantity == 1
     taken
   end
 end

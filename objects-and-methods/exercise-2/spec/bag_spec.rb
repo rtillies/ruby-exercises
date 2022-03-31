@@ -96,7 +96,7 @@ RSpec.describe Bag do
     expect(bag.count).to eq(1)
   end
 
-  xit 'can take one candy' do
+  it 'can take one candy' do
     bag = Bag.new
     bag << Candy.new('Lifesavers')
 
