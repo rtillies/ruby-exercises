@@ -64,7 +64,7 @@ RSpec.describe TrickOrTreater do
     expect(trick_or_treater.candy_count).to eq(0)
   end
 
-  xit 'has a sugar level that starts at 0' do
+  it 'has a sugar level that starts at 0' do
     trick_or_treater = TrickOrTreater.new(Costume.new('Hobbit'))
 
     expect(trick_or_treater.sugar_level).to eq(0)

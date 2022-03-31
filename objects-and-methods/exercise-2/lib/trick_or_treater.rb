@@ -1,9 +1,10 @@
 class TrickOrTreater
-  attr_reader :costume, :bag
+  attr_reader :costume, :bag, :sugar_level
 
   def initialize(costume)
     @costume = costume
     @bag = Bag.new
+    @sugar_level = 0
   end
 
   def dressed_up_as
