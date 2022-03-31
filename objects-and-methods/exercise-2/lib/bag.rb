@@ -1,3 +1,4 @@
+require 'pry'
 class Bag
   attr_reader :candies
 
@@ -26,5 +27,11 @@ class Bag
       candy.type == name
     }
     @candies.delete candy
+  end
+
+  def take quantity
+    taken = []
+    quantity.times { taken << @candies.pop }
+    taken
   end
 end
