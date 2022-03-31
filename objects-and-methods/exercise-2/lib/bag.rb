@@ -22,6 +22,9 @@ class Bag
   end
 
   def grab name
-    @candies.find { |candy| candy.type == name }
+    candy = @candies.find { |candy|
+      candy.type == name
+    }
+    @candies.delete candy
   end
 end
