@@ -20,6 +20,7 @@ class TrickOrTreater
   end
 
   def eat
-    @bag.candies.shift
+    candy = @bag.candies.shift
+    @sugar_level += candy.sugar
   end
 end

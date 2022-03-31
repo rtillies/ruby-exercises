@@ -70,7 +70,7 @@ RSpec.describe TrickOrTreater do
     expect(trick_or_treater.sugar_level).to eq(0)
   end
 
-  xit 'increases the sugar level when it eats candies' do
+  it 'increases the sugar level when it eats candies' do
     trick_or_treater = TrickOrTreater.new(Costume.new('Hobbit'))
 
     trick_or_treater.bag << Candy.new('Gummy worms', 88)
