@@ -6,6 +6,10 @@ class Bag
   end
 
   def empty?
-    @candies.count == 0
-  end 
+    count == 0
+  end
+
+  def count
+    @candies.count
+  end
 end
