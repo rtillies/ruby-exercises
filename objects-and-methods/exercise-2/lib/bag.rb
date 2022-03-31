@@ -14,6 +14,10 @@ class Bag
   end
 
   def << candy
-    @candies << candy 
+    @candies << candy
+  end
+
+  def contains? name
+    @candies.any? { |candy| candy.type == name  }
   end
 end
